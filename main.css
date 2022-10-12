@@ -1,0 +1,71 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+.wrapper {
+  width: 80%;
+  height: 40vh;
+  margin: 50px auto;
+  outline: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img__hover1,
+.img__hover2,
+.img__hover3,
+.img__hover4 {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  outline: 1px solid blue;
+}
+
+.img__hover1 {
+  background-image: url("https://source.unsplash.com/random/210x210");
+}
+.img__hover1 img {
+  opacity: 1;
+  transition: 0.5s;
+}
+.img__hover1:hover img {
+  opacity: 0;
+}
+
+.img__hover2 img {
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+.img__hover2:hover img {
+  filter: grayscale(0);
+}
+
+.img__hover3 {
+  background-image: url("https://source.unsplash.com/random/205x205");
+  transition: 0.5s;
+}
+.img__hover3:hover {
+  background-image: url("https://source.unsplash.com/random/215x215");
+}
+.img__hover4 {
+  background-image: url("https://source.unsplash.com/random/150x300");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transition: 0.5s;
+}
+.img__hover4:hover {
+  background-position: 0 -150px;
+}
